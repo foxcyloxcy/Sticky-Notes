@@ -37,6 +37,12 @@ function addTodo(e) {
     completedButton.classList.add('complete-btn');
     todoDiv.appendChild(completedButton);
 
+    //Create the uncompleted button
+    const uncompletedButton = document.createElement("button");
+    uncompletedButton.innerHTML = `<i class="fas fa-times-circle"></i>`;
+    uncompletedButton.classList.add("uncomplete-btn");
+    todoDiv.appendChild(uncompletedButton);
+
     //Create the trash button
     const trashButton = document.createElement('button');
     trashButton.innerHTML = `<i class="fas fa-trash"></i>`;
@@ -140,6 +146,13 @@ function getTodos() {
         completedButton.innerHTML = `<i class="fas fa-check"></i>`;
         completedButton.classList.add("complete-btn");
         todoDiv.appendChild(completedButton);
+
+        //Create Uncomplete Button
+        const uncompletedButton = document.createElement("button");
+        uncompletedButton.innerHTML = `<i class="fas fa-times-circle"></i>`;
+        uncompletedButton.classList.add("uncomplete-btn");
+        todoDiv.appendChild(uncompletedButton);
+        
         //Create trash button
         const trashButton = document.createElement("button");
         trashButton.innerHTML = `<i class="fas fa-trash"></i>`;
