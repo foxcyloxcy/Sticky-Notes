@@ -132,7 +132,7 @@ select {
 }
 
 /* Styling the trash button  */
-.trash-btn , .complete-btn {
+.trash-btn , .complete-btn, .uncomplete-btn {
     background-color: #f63c42;
     color: white;
     border: none;
@@ -144,6 +144,10 @@ select {
 .complete-btn {
     background-color: #70d36f;
 }
+
+.uncomplete-btn {
+    background-color: #295728;
+} 
 .todo-item {
     padding: 0rem 0.5rem;
 }
@@ -160,6 +164,6 @@ select {
 }
 
 /* Styling the trash and check icons */
-.fa-trash , .fa-check {
+.fa-trash , .fa-check , .fa-x {
     pointer-events: none;
 }
